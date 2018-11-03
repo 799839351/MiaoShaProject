@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title -我的秒杀项目</title>
+    <link href="~/Content/static/layer/skin/default/layer.css" rel="stylesheet" />
+    <link href="~/Content/static/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/respond.min.js"></script>
+    <script src="~/Content/static/js/md5.min.js"></script>
+    <script src="~/Content/static/layer/layer.js"></script>
+</head>
+<body>
+    <div>
+        @RenderBody()
+        
+        <footer>
+            <p class="text-center">&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
